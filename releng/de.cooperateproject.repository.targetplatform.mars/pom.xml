@@ -5,16 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>de.cooperateproject.repository</groupId>
-		<artifactId>parent</artifactId>
+		<artifactId>releng</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
-	<artifactId>releng</artifactId>
-	<packaging>pom</packaging>
-	<name>Releng Modules</name>
-	
-	<modules>
-		<module>de.cooperateproject.repository.targetplatform.mars</module>
-	</modules>
+	<artifactId>de.cooperateproject.repository.targetplatform.mars</artifactId>
+    <packaging>eclipse-target-definition</packaging>
+	<name>Target Platform (Mars)</name>
 	
 </project>
