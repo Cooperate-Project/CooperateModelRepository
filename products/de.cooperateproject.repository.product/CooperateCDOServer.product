@@ -25,12 +25,15 @@
    </vm>
 
    <plugins>
+      <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
+      <plugin id="de.cooperateproject.modeling.textual.cls.metamodel"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="javax.servlet"/>
       <plugin id="javax.xml"/>
       <plugin id="lpg.runtime.java"/>
+      <plugin id="org.antlr.runtime"/>
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
@@ -97,6 +100,7 @@
       <plugin id="org.eclipse.emf.cdo.server.admin"/>
       <plugin id="org.eclipse.emf.cdo.server.db"/>
       <plugin id="org.eclipse.emf.cdo.server.net4j"/>
+      <plugin id="org.eclipse.emf.cdo.server.ocl"/>
       <plugin id="org.eclipse.emf.cdo.server.product"/>
       <plugin id="org.eclipse.emf.cdo.server.security"/>
       <plugin id="org.eclipse.emf.cdo.transfer"/>
@@ -115,6 +119,7 @@
       <plugin id="org.eclipse.emf.ecore"/>
       <plugin id="org.eclipse.emf.ecore.change"/>
       <plugin id="org.eclipse.emf.ecore.edit"/>
+      <plugin id="org.eclipse.emf.ecore.xcore.lib"/>
       <plugin id="org.eclipse.emf.ecore.xmi"/>
       <plugin id="org.eclipse.emf.edit"/>
       <plugin id="org.eclipse.emf.edit.ui"/>
@@ -222,6 +227,7 @@
       <plugin id="org.eclipse.uml2.uml.profile.standard"/>
       <plugin id="org.eclipse.uml2.uml.resources"/>
       <plugin id="org.eclipse.uml2.uml.validation"/>
+      <plugin id="org.eclipse.xtext.xbase.lib"/>
       <plugin id="org.h2"/>
       <plugin id="org.hamcrest.core"/>
       <plugin id="org.junit"/>
