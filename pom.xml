@@ -35,52 +35,29 @@
 
 	<distributionManagement>
 		<site>
-			<id>github-cooperate-deploy</id>
-			<url>gitsite:git@github.com/Cooperate-Project/CooperateModelRepository</url>
+			<id>cooperate-repository</id>
+			<url>dav:https://mammutbaum36.fzi.de/repository/sites</url>
 		</site>
+		<repository>
+			<id>cooperate-repository</id>
+			<name>Release Repository</name>
+			<url>dav:https://mammutbaum36.fzi.de/repository/release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>cooperate-repository</id>
+			<name>Snapshot Repository</name>
+			<url>dav:https://mammutbaum36.fzi.de/repository/snapshots/</url>
+		</snapshotRepository>
 	</distributionManagement>
 
-	<!--
-	<repositories>
-		<repository>
-			<id>eclipse-mars</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/mars</url>
-		</repository>
-		<repository>
-			<id>eclipse-mars-update</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/eclipse/updates/4.5</url>
-		</repository>
-		<repository>
-			<id>eclipse-mars-orbit</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
-		</repository>
-		<repository>
-			<id>teneo-dependencies</id>
-			<layout>p2</layout>
-			<url>http://www.elver.org/eclipse/2.1.0/update</url>
-		</repository>
-		<repository>
-			<id>cooperate-externals</id>
-			<layout>p2</layout>
-			<url>https://cooperate-project.github.io/Externals/updatesite/latest</url>
-		</repository>
-		<repository>
-			<id>papyrus-mars</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/mars</url>
-		</repository>
-		<repository>
-			<id>eclipse-license-feature</id>
-			<url>http://download.eclipse.org/cbi/updates/license/</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
-	-->
-
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>2.10</version>
+			</extension>
+		</extensions>
 		<plugins>
 
 			<plugin>
@@ -156,8 +133,9 @@
 					<target>
 						<artifact>
 							<groupId>de.cooperateproject.repository</groupId>
-							<artifactId>de.cooperateproject.repository.targetplatform.mars</artifactId>
+							<artifactId>targetplatforms</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
+							<classifier>mars</classifier>
 						</artifact>
 					</target>					
 					<environments>
@@ -188,6 +166,12 @@
 						</environment>
 					</environments>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
 			</plugin>
 
 			<plugin>

@@ -14,7 +14,7 @@
 	<name>Releng Modules</name>
 	
 	<modules>
-		<module>de.cooperateproject.repository.targetplatform.mars</module>
+		<module>de.cooperateproject.repository.targetplatforms</module>
 	</modules>
 	
 </project>
