@@ -86,7 +86,7 @@
       <plugin id="org.eclipse.e4.ui.workbench3"/>
       <plugin id="org.eclipse.emf.cdo"/>
       <plugin id="org.eclipse.emf.cdo.admin"/>
-      <plugin id="org.eclipse.emf.cdo.common"/>
+      <plugin id="org.eclipse.emf.cdo.common" version="4.4.1.201607071926"/>
       <plugin id="org.eclipse.emf.cdo.ecore.retrofit" fragment="true"/>
       <plugin id="org.eclipse.emf.cdo.edit"/>
       <plugin id="org.eclipse.emf.cdo.expressions"/>
@@ -96,7 +96,7 @@
       <plugin id="org.eclipse.emf.cdo.security.edit"/>
       <plugin id="org.eclipse.emf.cdo.security.editor"/>
       <plugin id="org.eclipse.emf.cdo.security.ui"/>
-      <plugin id="org.eclipse.emf.cdo.server"/>
+      <plugin id="org.eclipse.emf.cdo.server" version="4.4.1.201607071926"/>
       <plugin id="org.eclipse.emf.cdo.server.admin"/>
       <plugin id="org.eclipse.emf.cdo.server.db"/>
       <plugin id="org.eclipse.emf.cdo.server.net4j"/>
@@ -180,6 +180,11 @@
       <plugin id="org.eclipse.jface"/>
       <plugin id="org.eclipse.jface.databinding"/>
       <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.m2m.qvt.oml"/>
+      <plugin id="org.eclipse.m2m.qvt.oml.common"/>
+      <plugin id="org.eclipse.m2m.qvt.oml.cst.parser"/>
+      <plugin id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl"/>
+      <plugin id="org.eclipse.m2m.qvt.oml.emf.util"/>
       <plugin id="org.eclipse.net4j"/>
       <plugin id="org.eclipse.net4j.db"/>
       <plugin id="org.eclipse.net4j.db.h2"/>
