@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="CDOServer" sequenceNumber="71">
+<?pde version="3.8"?><target name="CDOServer" sequenceNumber="75">
 <locations>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="org.eclipse.platform.ide" version="4.5.2.M20160212-1500"/>
-<unit id="org.eclipse.sdk.ide" version="4.5.2.M20160212-1500"/>
-<unit id="org.eclipse.equinox.sdk.feature.group" version="3.11.2.v20160202-2102"/>
-<repository location="http://download.eclipse.org/eclipse/updates/4.5"/>
-</location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.mariadb.jdbc" version="1.4.2.0"/>
 <repository location="https://cooperate-project.github.io/Externals/updatesite/latest"/>
@@ -16,6 +10,19 @@
 <unit id="org.eclipse.papyrus.dd.feature.feature.group" version="0.7.0.201602101324"/>
 <unit id="org.eclipse.papyrus.umldi.feature.feature.group" version="0.7.0.201602101324"/>
 <repository location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/mars"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="org.eclipse.platform.ide" version="4.5.2.M20160212-1500"/>
+<unit id="org.eclipse.sdk.ide" version="4.5.2.M20160212-1500"/>
+<unit id="org.eclipse.equinox.sdk.feature.group" version="3.11.2.v20160202-2102"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.5"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="com.google.inject" version="3.0.0.v201312141243"/>
+<unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
+<unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
+<unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.8.3.v201512160634"/>
@@ -44,20 +51,11 @@
 <repository location="http://download.eclipse.org/releases/mars"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="com.google.inject" version="3.0.0.v201312141243"/>
-<unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
-<unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
-<unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/"/>
-</location>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.modeling.textual.feature.feature.group" version="0.0.0"/>
+<unit id="de.cooperateproject.cdo.server.patch.feature.group" version="1.0.0.201607110938"/>
+<unit id="de.cooperateproject.cdo.patched.bundles.feature.feature.group" version="1.0.0.201607110938"/>
+<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="1.0.0.201607081629"/>
+<unit id="de.cooperateproject.cdo.patch.feature.group" version="1.0.0.201607110938"/>
 <repository location="https://mammutbaum36.fzi.de/p2/cooperate-dev/"/>
-</location>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.cdo.server.patch.feature.group" version="1.0.0"/>
-<unit id="de.cooperateproject.cdo.patch.feature.group" version="1.0.0"/>
-<repository location="https://mammutbaum36.fzi.de/unzip/maven/latest-SNAPSHOT/cooperate-dev/de.cooperateproject.cdo/de.cooperateproject.cdo.updatesite"/>
 </location>
 </locations>
 <includeBundles>
