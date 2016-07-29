@@ -10,7 +10,7 @@ This repository stores the code of the Cooperate Model Repository server.
 ## Usage
 * Choose the product from one of the upper URLs that matches your server's architecture
 * Unzip it anywhere you like
-* Create a folder called config and add a CDO config file (we will provide sample files and more detailed descriptions later)
+* Create a folder called config and add a CDO config file (see our [Wiki](https://github.com/Cooperate-Project/CooperateModelRepository/wiki) for more information on configurations)
 
 ## Pitfalls
 
