@@ -84,7 +84,7 @@
       <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
       <plugin id="org.eclipse.e4.ui.workbench.swt"/>
       <plugin id="org.eclipse.e4.ui.workbench3"/>
-      <plugin id="org.eclipse.emf.cdo" version="4.4.1.201607221028"/>
+      <plugin id="org.eclipse.emf.cdo" version="4.4.2"/>
       <plugin id="org.eclipse.emf.cdo.admin"/>
       <plugin id="org.eclipse.emf.cdo.common"/>
       <plugin id="org.eclipse.emf.cdo.ecore.retrofit" fragment="true"/>
@@ -96,7 +96,7 @@
       <plugin id="org.eclipse.emf.cdo.security.edit"/>
       <plugin id="org.eclipse.emf.cdo.security.editor"/>
       <plugin id="org.eclipse.emf.cdo.security.ui"/>
-      <plugin id="org.eclipse.emf.cdo.server" version="4.4.1.201607221028"/>
+      <plugin id="org.eclipse.emf.cdo.server" version="4.4.2"/>
       <plugin id="org.eclipse.emf.cdo.server.admin"/>
       <plugin id="org.eclipse.emf.cdo.server.db"/>
       <plugin id="org.eclipse.emf.cdo.server.net4j"/>
@@ -107,8 +107,6 @@
       <plugin id="org.eclipse.emf.cdo.transfer.repository"/>
       <plugin id="org.eclipse.emf.cdo.transfer.ui"/>
       <plugin id="org.eclipse.emf.cdo.transfer.workspace"/>
-      <plugin id="org.eclipse.emf.cdo.ui"/>
-      <plugin id="org.eclipse.emf.cdo.ui.shared"/>
       <plugin id="org.eclipse.emf.codegen"/>
       <plugin id="org.eclipse.emf.codegen.ecore"/>
       <plugin id="org.eclipse.emf.common"/>

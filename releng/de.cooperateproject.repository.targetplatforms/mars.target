@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="CDOServer" sequenceNumber="79">
+<?pde version="3.8"?><target name="CDOServer" sequenceNumber="82">
 <locations>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.mariadb.jdbc" version="1.4.2.0"/>
@@ -51,9 +51,12 @@
 <repository location="http://download.eclipse.org/releases/mars"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.cdo.patched.server.feature.feature.group" version="1.0.0.201607221028"/>
-<unit id="de.cooperateproject.cdo.patched.client.feature.feature.group" version="1.0.0.201607221028"/>
-<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="1.0.0.201607291218"/>
+<unit id="de.cooperateproject.cdo.patched.client.feature.feature.group" version="4.4.2"/>
+<unit id="de.cooperateproject.cdo.patched.server.feature.feature.group" version="4.4.2"/>
+<repository location="https://mammutbaum36.fzi.de/p2/cooperate/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="1.0.0.201608301116"/>
 <repository location="https://mammutbaum36.fzi.de/p2/cooperate-dev/"/>
 </location>
 </locations>
