@@ -95,7 +95,6 @@
       <plugin id="org.eclipse.emf.cdo.security"/>
       <plugin id="org.eclipse.emf.cdo.security.edit"/>
       <plugin id="org.eclipse.emf.cdo.security.editor"/>
-      <plugin id="org.eclipse.emf.cdo.security.ui"/>
       <plugin id="org.eclipse.emf.cdo.server" version="4.4.2"/>
       <plugin id="org.eclipse.emf.cdo.server.admin"/>
       <plugin id="org.eclipse.emf.cdo.server.db"/>
@@ -105,7 +104,6 @@
       <plugin id="org.eclipse.emf.cdo.server.security"/>
       <plugin id="org.eclipse.emf.cdo.transfer"/>
       <plugin id="org.eclipse.emf.cdo.transfer.repository"/>
-      <plugin id="org.eclipse.emf.cdo.transfer.ui"/>
       <plugin id="org.eclipse.emf.cdo.transfer.workspace"/>
       <plugin id="org.eclipse.emf.codegen"/>
       <plugin id="org.eclipse.emf.codegen.ecore"/>
