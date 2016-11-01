@@ -27,10 +27,7 @@
    <plugins>
       <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
-      <plugin id="de.cooperateproject.modeling.common"/>
       <plugin id="de.cooperateproject.modeling.textual.cls.metamodel"/>
-      <plugin id="de.cooperateproject.modeling.textual.common"/>
-      <plugin id="de.cooperateproject.util"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="javax.servlet"/>
