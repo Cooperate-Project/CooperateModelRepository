@@ -27,7 +27,10 @@
    <plugins>
       <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
+      <plugin id="de.cooperateproject.modeling.common"/>
       <plugin id="de.cooperateproject.modeling.textual.cls.metamodel"/>
+      <plugin id="de.cooperateproject.modeling.textual.common"/>
+      <plugin id="de.cooperateproject.util"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="javax.servlet"/>
@@ -37,7 +40,9 @@
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
+      <plugin id="org.apache.commons.io"/>
       <plugin id="org.apache.commons.jxpath"/>
+      <plugin id="org.apache.commons.lang3"/>
       <plugin id="org.apache.felix.gogo.command"/>
       <plugin id="org.apache.felix.gogo.runtime"/>
       <plugin id="org.apache.felix.gogo.shell"/>

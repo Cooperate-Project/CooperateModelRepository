@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="neon" sequenceNumber="6">
+<?pde version="3.8"?><target name="neon" sequenceNumber="9">
 <locations>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.platform.sdk" version="4.6.0.I20160606-1100"/>
@@ -10,22 +10,6 @@
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.mariadb.jdbc" version="1.4.2.0"/>
 <repository location="https://cooperate-project.github.io/Externals/updatesite/latest"/>
-</location>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
-<unit id="com.google.inject" version="3.0.0.v201605172100"/>
-<unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
-<unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
-</location>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.cdo.patched.client.feature.feature.group" version="4.5.1"/>
-<unit id="de.cooperateproject.cdo.patched.server.feature.feature.group" version="4.5.1"/>
-<repository location="https://cooperate-project.github.io/updatesite/release/"/>
-</location>
-<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="1.0.0.201609201539"/>
-<repository location="https://mammutbaum36.fzi.de/p2/cooperate-dev/"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.emf.ecore.xcore.sdk.feature.group" version="1.4.0.v20160526-0606"/>
@@ -55,6 +39,23 @@
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.swt.dummyfragments.feature.group" version="1.0.0.v20160603-0902"/>
 <repository location="https://eclipseguru.github.io/missing-swt-fragments/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="de.cooperateproject.cdo.patched.client.feature.feature.group" version="4.5.1"/>
+<unit id="de.cooperateproject.cdo.patched.server.feature.feature.group" version="4.5.1"/>
+<repository location="https://dl.bintray.com/cooperate-project/CDO/updatesite/4.5.1/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="0.1.2"/>
+<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/0.1.2/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
+<unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
+<unit id="org.apache.commons.io" version="2.2.0.v201405211200"/>
+<unit id="com.google.inject" version="3.0.0.v201605172100"/>
+<unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
 </location>
 </locations>
 </target>
