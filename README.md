@@ -1,32 +1,9 @@
 # CooperateModelRepository
 
-[![Build Status](https://img.shields.io/travis/Cooperate-Project/CooperateModelRepository.svg)](https://travis-ci.org/Cooperate-Project/CooperateModelRepository)
+[![Build Status](https://img.shields.io/travis/Cooperate-Project/CooperateModelingRepository.svg)](https://travis-ci.org/Cooperate-Project/CooperateModelingRepository)
+[![Issues](https://img.shields.io/github/issues/Cooperate-Project/CooperateModelingRepository.svg)](https://github.com/Cooperate-Project/CooperateModelingRepository/issues)
+[![License](https://img.shields.io/github/license/Cooperate-Project/CooperateModelingRepository.svg)](https://raw.githubusercontent.com/Cooperate-Project/CooperateModelingRepository/master/LICENSE)
 
-This repository stores the code of the Cooperate Model Repository server.
+The Cooperate Modeling Repository server is used as the central model repository for the Cooperate Modeling environment. One repository servers multiple clients. For information on the client environment visit the [modeling environment repository](https://github.com/Cooperate-Project/CooperateModelingEnvironment).
 
-## Installation
-* Snapshots: (https://mammutbaum36.fzi.de/repository/snapshots/modelrepository/)
-
-## Usage
-* Choose the product from one of the upper URLs that matches your server's architecture
-* Unzip it anywhere you like
-* Create a folder called config and add a CDO config file (see our [Wiki](https://github.com/Cooperate-Project/CooperateModelRepository/wiki) for more information on configurations)
-
-## Pitfalls
-
-### OCL
-The OCL package cannot be registered dynamically but have to be registered manually. Add the following lines to your repository configuration:
-```xml
-<initialPackage nsURI="http://www.eclipse.org/ocl/1.1.0/OCL/Expressions"/>
-<initialPackage nsURI="http://www.eclipse.org/ocl/1.1.0/OCL/Types"/>
-<initialPackage nsURI="http://www.eclipse.org/ocl/1.1.0/OCL/Utilities"/>
-```
-
-### QVT-O Trace
-The meta model for the QVT-O trace should be registered statically. Add the following lines to your repository configuration:
-```xml
-<initialPackage nsURI="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore"/>
-```
-
-### JDBC Exception on Startup
-After adding the initialPackage statements, the CDO server might crash at the second start. As a workaround, you can simply remove the configuration statements again. Nevertheless, we issues a [bug report](https://bugs.eclipse.org/bugs/show_bug.cgi?id=497148) to address this issue in the CDO implementation itself.
+Information on installation and usage can be found in the [Wiki](https://github.com/Cooperate-Project/CooperateModelingRepository/wiki).
