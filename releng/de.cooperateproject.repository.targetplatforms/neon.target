@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="neon" sequenceNumber="9">
+<?pde version="3.8"?><target name="neon" sequenceNumber="10">
 <locations>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.platform.sdk" version="4.6.0.I20160606-1100"/>
@@ -9,6 +9,7 @@
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.mariadb.jdbc" version="1.4.2.0"/>
+<unit id="org.apache.activemq.all" version="5.14.3"/>
 <repository location="https://cooperate-project.github.io/Externals/updatesite/latest"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
@@ -56,6 +57,10 @@
 <unit id="com.google.inject" version="3.0.0.v201605172100"/>
 <unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
+</location>
+<location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="0.1.5.201701181441"/>
+<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/latest"/>
 </location>
 </locations>
 </target>

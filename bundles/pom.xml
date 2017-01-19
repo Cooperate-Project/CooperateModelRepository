@@ -13,10 +13,8 @@
 	<packaging>pom</packaging>
 	<name>Bundle Modules</name>
 	
-	<!--
 	<modules>
-		<module>de.cooperateproject.ui</module>
+		<module>de.cooperateproject.repository.messagebroker</module>
 	</modules>
-	-->
 	
 </project>

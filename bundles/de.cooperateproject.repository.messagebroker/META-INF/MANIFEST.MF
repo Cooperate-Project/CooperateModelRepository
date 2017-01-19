@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Messagebroker
+Bundle-SymbolicName: de.cooperateproject.repository.messagebroker;singleton:=true
+Bundle-Version: 0.1.4.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: de.cooperateproject.repository.messagebroker.Activator
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.12.0",
+ org.apache.activemq.all;bundle-version="5.14.3",
+ org.apache.commons.io;bundle-version="2.2.0",
+ org.apache.log4j;bundle-version="1.2.15"
