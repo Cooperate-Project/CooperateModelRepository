@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.1.6" useFeatures="false" includeLaunchers="true">
+<product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.1.7.qualifier" useFeatures="false" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
