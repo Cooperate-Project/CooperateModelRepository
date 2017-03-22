@@ -1,7 +1,7 @@
 package de.cooperateproject.repository.messagebroker.impl;
 
 public enum MessageBrokerConfigurationProperties {
-	HOST("host", "localhost"),
+	HOST("host", "0.0.0.0"),
 	PORT("port", 61616);
 	
 	private final String key;
