@@ -33,6 +33,7 @@
       <plugin id="com.ibm.icu"/>
       <plugin id="de.cooperateproject.modeling.textual.cls.metamodel"/>
       <plugin id="de.cooperateproject.modeling.textual.common.metamodel"/>
+      <plugin id="de.cooperateproject.modeling.textual.usecase.metamodel"/>
       <plugin id="de.cooperateproject.repository.messagebroker"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
