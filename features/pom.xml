@@ -13,10 +13,9 @@
 	<packaging>pom</packaging>
 	<name>Feature Modules</name>
 	
-	<!--
 	<modules>
-		<module>de.cooperateproject.modeling.textual.feature</module>
+		<module>de.cooperateproject.repository.customizations</module>
+		<module>de.cooperateproject.repository.thirdparty</module>
 	</modules>
-	-->
 	
 </project>

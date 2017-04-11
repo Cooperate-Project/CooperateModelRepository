@@ -38,7 +38,7 @@ public class Activator extends Plugin {
 				@Override
 				public void run() {
 					try {
-						Thread.sleep(2000);
+						Thread.sleep(4000);
 						configureLogging();
 						startMessageBroker();
 					} catch (InterruptedException e) {

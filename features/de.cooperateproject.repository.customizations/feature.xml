@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.cooperateproject.repository.customizations"
+      label="%featureName"
+      version="0.1.7.qualifier"
+      license-feature="de.cooperateproject.license"
+      license-feature-version="1.0.0">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="de.cooperateproject.repository.thirdparty" version="0.1.7.qualifier"/>
+   </requires>
+
+   <plugin
+         id="de.cooperateproject.repository.messagebroker"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
