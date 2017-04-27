@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Messagebroker
 Bundle-SymbolicName: de.cooperateproject.repository.messagebroker;singleton:=true
-Bundle-Version: 0.1.7.qualifier
+Bundle-Version: 0.1.7
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: de.cooperateproject.repository.messagebroker.Activator
