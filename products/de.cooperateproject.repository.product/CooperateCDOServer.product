@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.1.7" useFeatures="true" includeLaunchers="true">
+<product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.1.8.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -83,8 +83,8 @@
       <feature id="org.eclipse.emf.validation"/>
       <feature id="org.eclipse.emf.mapping"/>
       <feature id="org.eclipse.emf.converter"/>
-      <feature id="de.cooperateproject.repository.customizations" version="0.1.7"/>
-      <feature id="de.cooperateproject.repository.thirdparty" version="0.1.7"/>
+      <feature id="de.cooperateproject.repository.customizations" version="0.1.8.qualifier"/>
+      <feature id="de.cooperateproject.repository.thirdparty" version="0.1.8.qualifier"/>
    </features>
 
    <configurations>
