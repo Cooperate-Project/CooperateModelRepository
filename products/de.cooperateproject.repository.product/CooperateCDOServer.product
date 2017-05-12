@@ -3,6 +3,7 @@
 
 <product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.1.8.qualifier" useFeatures="true" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -17,6 +18,7 @@
 
    <windowImages/>
 
+
    <launcher name="cooperateModelRepository">
       <solaris/>
       <win useIco="false">
@@ -24,8 +26,10 @@
       </win>
    </launcher>
 
+
    <vm>
    </vm>
+
 
    <plugins>
    </plugins>
@@ -38,11 +42,9 @@
       <feature id="org.eclipse.net4j"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
       <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
-      <feature id="org.eclipse.help"/>
       <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
       <feature id="org.eclipse.equinox.p2.extras.feature"/>
       <feature id="org.eclipse.net4j.util"/>
-      <feature id="org.eclipse.rcp"/>
       <feature id="org.eclipse.emf.common"/>
       <feature id="org.eclipse.equinox.p2.core.feature"/>
       <feature id="org.eclipse.ecf.core.feature"/>
@@ -67,7 +69,7 @@
       <feature id="de.cooperateproject.cdo.patched.client.feature" version="4.5.1"/>
       <feature id="de.cooperateproject.cdo.patched.server.feature" version="4.5.1"/>
       <feature id="de.cooperateproject.cdo.server.patch" version="4.5.1"/>
-      <feature id="de.cooperateproject.modeling.textual.metamodels.feature" version="0.1.7.qualifier"/>
+      <feature id="de.cooperateproject.modeling.textual.metamodels.feature" version="0.1.8.qualifier"/>
       <feature id="org.eclipse.gmf.runtime.notation"/>
       <feature id="org.eclipse.uml2.uml"/>
       <feature id="org.eclipse.uml2.common"/>
@@ -90,6 +92,10 @@
    <configurations>
       <plugin id="de.cooperateproject.repository.messagebroker" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.emf.cdo.ui" autoStart="false" startLevel="99" />
+      <plugin id="org.eclipse.emf.cdo.ui.admin" autoStart="false" startLevel="99" />
+      <plugin id="org.eclipse.emf.cdo.ui.shared" autoStart="false" startLevel="99" />
+      <plugin id="org.eclipse.emf.cdo.ui.team" autoStart="false" startLevel="99" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
