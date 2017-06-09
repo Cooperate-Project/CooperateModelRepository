@@ -16,11 +16,12 @@ public class Activator extends Plugin {
 
 	public static final String PLUGIN_ID = "de.cooperateproject.repository.messagebroker";
 	private static final Logger LOGGER = Logger.getLogger(Activator.class);
-	private final BundleListener bundleListener = this::handleBundleEvent;
+	private BundleListener bundleListener;
 
 	@Override
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
+		bundleListener = this::handleBundleEvent;
 		context.addBundleListener(bundleListener);
 	}
 
@@ -34,18 +35,22 @@ public class Activator extends Plugin {
 
 	private void handleBundleEvent(BundleEvent event) {
 		if (event.getBundle() == this.getBundle() && event.getType() == BundleEvent.STARTED) {
-			new Thread(new Runnable() {
-				@Override
-				public void run() {
-					try {
-						Thread.sleep(4000);
-						configureLogging();
-						startMessageBroker();
-					} catch (InterruptedException e) {
-						return;
-					}
-				}
+			new Thread(() -> {
+				configureLoggingSafe();
+				startMessageBroker();
 			}).start();
+		}
+	}
+	
+	private void configureLoggingSafe() {
+		try {
+			Thread.sleep(4000);
+			configureLogging();							
+		} catch (NullPointerException e) {
+			LOGGER.error("Could not configure logger because of NPE in framework.", e);
+		} catch (InterruptedException e) {
+			LOGGER.error("Was not able to wait for configuring the logging. Aborting.", e);
+			Thread.currentThread().interrupt();
 		}
 	}
 
