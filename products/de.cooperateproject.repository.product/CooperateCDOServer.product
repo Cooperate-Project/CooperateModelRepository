@@ -37,7 +37,7 @@
    <features>
       <feature id="org.eclipse.emf.cdo"/>
       <feature id="org.eclipse.emf.cdo.server"/>
-      <feature id="org.eclipse.platform"/>
+      <!--<feature id="org.eclipse.platform"/>-->
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.net4j"/>
       <feature id="org.eclipse.equinox.p2.extras.feature"/>
