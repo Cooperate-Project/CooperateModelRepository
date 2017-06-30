@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>de.cooperateproject.repository</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.1.8</version>
+		<version>0.2.0-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 	<artifactId>tests</artifactId>
