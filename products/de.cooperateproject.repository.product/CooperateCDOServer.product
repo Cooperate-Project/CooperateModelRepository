@@ -3,7 +3,6 @@
 
 <product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
-
    <configIni use="default">
    </configIni>
 
@@ -18,18 +17,14 @@
 
    <windowImages/>
 
-
    <launcher name="cooperateModelRepository">
-      <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
 
-
    <vm>
    </vm>
-
 
    <plugins>
    </plugins>
@@ -37,7 +32,6 @@
    <features>
       <feature id="org.eclipse.emf.cdo"/>
       <feature id="org.eclipse.emf.cdo.server"/>
-      <!--<feature id="org.eclipse.platform"/>-->
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.net4j"/>
       <feature id="org.eclipse.equinox.p2.extras.feature"/>
@@ -54,12 +48,7 @@
       <feature id="org.eclipse.emf.cdo.server.db"/>
       <feature id="org.eclipse.ocl"/>
       <feature id="org.eclipse.emf.databinding"/>
-      <feature id="org.eclipse.net4j.ui"/>
-      <feature id="de.cooperateproject.cdo.patch" version="4.5.1"/>
-      <feature id="de.cooperateproject.cdo.patched.client.feature" version="4.5.1"/>
-      <feature id="de.cooperateproject.cdo.patched.server.feature" version="4.5.1"/>
-      <feature id="de.cooperateproject.cdo.server.patch" version="4.5.1"/>
-      <feature id="de.cooperateproject.modeling.textual.metamodels.feature" version="0.1.8.qualifier"/>
+      <feature id="de.cooperateproject.modeling.textual.metamodels.feature" version="0.2.0.qualifier"/>
       <feature id="org.eclipse.gmf.runtime.notation"/>
       <feature id="org.eclipse.uml2.uml"/>
       <feature id="org.eclipse.uml2.common"/>
@@ -70,6 +59,15 @@
       <feature id="org.eclipse.emf.converter"/>
       <feature id="de.cooperateproject.repository.customizations" version="0.2.0.qualifier"/>
       <feature id="de.cooperateproject.repository.thirdparty" version="0.2.0.qualifier"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <feature id="org.eclipse.uml2.codegen.ecore.ui"/>
+      <feature id="org.eclipse.net4j.util.ui"/>
+      <feature id="org.eclipse.emf.edit"/>
+      <feature id="org.eclipse.uml2.common.edit"/>
+      <feature id="org.eclipse.uml2.uml.edit"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.emf.ecore.edit"/>
    </features>
 
    <configurations>
