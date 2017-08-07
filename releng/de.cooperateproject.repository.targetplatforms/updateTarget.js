@@ -55,6 +55,10 @@ function main(arguments) {
 		print('\tstring consisting of the word "master"');
 		return;
 	}
+	if (arguments[1] !== 'master') {
+		print('Not working on master. Skipping adjustment of target platform.');
+		return;
+	}
 	var targetFilePath = arguments[0];
 	var foundVersion = determineVersion(CONTENT_JAR_URL, FEATURE_NAME);
 	replaceVersion(targetFilePath, FEATURE_NAME, foundVersion);
