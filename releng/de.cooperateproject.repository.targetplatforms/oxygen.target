@@ -65,7 +65,7 @@
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="0.4.0"/>
-<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/0.4.0/"/>
+<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/latest/"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.equinox.sdk.feature.group" version="3.13.0.v20170531-1133"/>
