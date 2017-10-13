@@ -16,10 +16,9 @@
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.4.0.v20170516-2248"/>
-<unit id="org.eclipse.ecf.core.feature.group" version="3.13.7.v20170517-0223"/>
 <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
-<unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.13.7.v20170516-2248"/>
-<unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="3.13.7.v20170516-2248"/>
+<unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.13.8.v20170715-2257"/>
+<unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="3.13.8.v20170715-2257"/>
 <unit id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
 <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
 <unit id="org.eclipse.emf.cdo.epp.feature.group" version="4.6.0.v20170602-1611"/>
@@ -43,7 +42,7 @@
 <unit id="org.eclipse.emf.mapping.feature.group" version="2.9.0.v20170609-0928"/>
 <unit id="org.eclipse.emf.validation.feature.group" version="1.11.0.201706061352"/>
 <unit id="org.eclipse.gmf.runtime.notation.sdk.feature.group" version="1.11.0.201706061354"/>
-<unit id="org.eclipse.jdt.feature.group" version="3.13.0.v20170612-0950"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.13.1.v20171009-0410"/>
 <unit id="org.eclipse.net4j.db.feature.group" version="4.6.0.v20170521-0536"/>
 <unit id="org.eclipse.net4j.db.h2.feature.group" version="4.3.0.v20161018-1530"/>
 <unit id="org.eclipse.net4j.feature.group" version="4.6.0.v20170522-0642"/>
