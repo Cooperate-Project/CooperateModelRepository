@@ -71,6 +71,7 @@
    </features>
 
    <configurations>
+      <plugin id="de.cooperateproject.repository.commithistoryhandler" autoStart="true" startLevel="3" />
       <plugin id="de.cooperateproject.repository.messagebroker" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.emf.cdo.ui" autoStart="false" startLevel="99" />

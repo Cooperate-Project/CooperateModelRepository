@@ -14,7 +14,9 @@
 	<name>Bundle Modules</name>
 	
 	<modules>
+		<module>de.cooperateproject.repository.commithistoryhandler</module>
 		<module>de.cooperateproject.repository.messagebroker</module>
+		<module>org.eclipse.papyrus.infra.gmfdiag.style</module>
 	</modules>
 	
 </project>
