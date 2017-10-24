@@ -1,4 +1,4 @@
-package de.cooperateproject.repository.messagebroker;
+package de.cooperateproject.repository.logging.configurator.impl;
 
 import org.apache.log4j.AppenderSkeleton;
 import org.apache.log4j.Level;
@@ -28,10 +28,12 @@ public class BundleLoggingAppender extends AppenderSkeleton {
 	@Override
 	protected void append(LoggingEvent arg0) {
 		Exception t = null;
-		if (arg0.getThrowableInformation() != null && arg0.getThrowableInformation().getThrowable() instanceof Exception) {			
-			t = (Exception)arg0.getThrowableInformation().getThrowable();
+		if (arg0.getThrowableInformation() != null
+				&& arg0.getThrowableInformation().getThrowable() instanceof Exception) {
+			t = (Exception) arg0.getThrowableInformation().getThrowable();
 		}
-		IStatus status = new Status(getSeverity(arg0.getLevel()), Activator.PLUGIN_ID, arg0.getRenderedMessage(), t);
+		IStatus status = new Status(getSeverity(arg0.getLevel()), bundleLogging.getBundle().getSymbolicName(),
+				String.format("%s:%n%s", arg0.getLoggerName(), arg0.getRenderedMessage()), t);
 		bundleLogging.log(status);
 	}
 

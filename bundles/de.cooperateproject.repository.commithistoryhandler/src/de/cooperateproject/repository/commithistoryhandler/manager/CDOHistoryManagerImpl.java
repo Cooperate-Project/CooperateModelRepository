@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang3.Range;
+import org.apache.log4j.Logger;
 import org.eclipse.emf.cdo.CDOObject;
 import org.eclipse.emf.cdo.common.branch.CDOBranch;
 import org.eclipse.emf.cdo.common.commit.CDOCommitInfo;
@@ -38,6 +39,7 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 		void init() throws IOException;
 	}
 
+	private static final Logger LOGGER = Logger.getLogger(CDOHistoryManagerImpl.class);
 	private static final String CACHE_NAME = "commithistory";
 	private final Initializer initializer;
 	private final String repoName;
@@ -61,6 +63,7 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 	}
 
 	public void start() throws IOException {
+		LOGGER.info(String.format("Starting listening for CDOCommitInfo in %s", repoName));
 		initializer.init();
 	}
 
@@ -89,6 +92,7 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 	}
 
 	private void catchUp(CDOSession session) {
+		LOGGER.debug(String.format("Catching up commits for %s", repoName));
 		long mostRecentTimestampInData = Optional.of(cache.getKeysSorted().descendingIterator())
 				.filter(Iterator::hasNext).map(Iterator::next).orElse(CDOBranch.UNSPECIFIED_DATE);
 		long mostRecentTimestampInRepo = Long.MAX_VALUE;
@@ -101,6 +105,8 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 		if (cache.containsKey(commitInfo.getTimeStamp())) {
 			return;
 		}
+		
+		LOGGER.debug(String.format("Creating new cache entry for %s with timestamp %d", repoName, commitInfo.getTimeStamp()));
 		
 		CDOView historicView = session.openView(commitInfo.getBranch(), commitInfo.getTimeStamp());
 		try {

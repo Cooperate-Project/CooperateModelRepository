@@ -2,6 +2,7 @@ package de.cooperateproject.repository.commithistoryhandler.protocol;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.eclipse.emf.cdo.common.id.CDOID;
 import org.eclipse.emf.cdo.common.id.CDOIDUtil;
 import org.eclipse.emf.cdo.spi.common.protocol.CDODataInputImpl;
@@ -17,6 +18,7 @@ import de.cooperateproject.repository.commithistoryhandler.manager.ICDOHistoryMa
 public abstract class CDOCommitHistoryProtocolIndicationWithResponse extends IndicationWithResponse
 		implements CDOCommitHistoryProtocolSignal {
 
+	private static final Logger LOGGER = Logger.getLogger(CDOCommitHistoryProtocolIndicationWithResponse.class);
 	private ICDOHistoryManager historyManager;
 
 	public CDOCommitHistoryProtocolIndicationWithResponse(CDOCommitHistoryProtocol protocol, short signalID) {
@@ -26,6 +28,7 @@ public abstract class CDOCommitHistoryProtocolIndicationWithResponse extends Ind
 	@Override
 	protected void indicating(ExtendedDataInputStream in) throws Exception {
 		String repositoryID = in.readString();
+		LOGGER.debug(String.format("Received request for %s with repositoryID %s.", this.getClass().getSimpleName(), repositoryID));
 		historyManager = CDOHistoryManagerAggregator.INSTANCE.getHistoryManager(repositoryID)
 				.orElseThrow(IllegalArgumentException::new);
 		indicatingData(in);

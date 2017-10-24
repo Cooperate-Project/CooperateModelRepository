@@ -3,6 +3,7 @@
 
 <product name="CooperateCDOServer" uid="cooperate.cdo.server" id="org.eclipse.emf.cdo.server.product.tcp_h2" application="org.eclipse.emf.cdo.server.app" version="0.4.2.qualifier" useFeatures="true" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -22,6 +23,7 @@
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
    </vm>
@@ -72,6 +74,7 @@
 
    <configurations>
       <plugin id="de.cooperateproject.repository.commithistoryhandler" autoStart="true" startLevel="3" />
+      <plugin id="de.cooperateproject.repository.logging" autoStart="true" startLevel="2" />
       <plugin id="de.cooperateproject.repository.messagebroker" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.emf.cdo.ui" autoStart="false" startLevel="99" />
