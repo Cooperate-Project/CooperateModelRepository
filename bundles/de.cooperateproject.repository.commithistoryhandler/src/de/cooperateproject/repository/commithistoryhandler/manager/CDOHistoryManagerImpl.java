@@ -121,12 +121,12 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 			commit.getChangedObjects().addAll(createIdList(changedObjects));
 
 			// changed resources
-			Collection<CDOObject> changedResources = changedObjects.stream().map(CDOObject::cdoDirectResource)
+			Collection<CDOObject> changedResources = changedObjects.stream().map(CDOObject::cdoResource)
 					.filter(Objects::nonNull).collect(Collectors.toSet());
 			commit.getChangedResources().addAll(createIdList(changedResources));
 
 			// affected cross references
-			Set<CrossReference> changedCrossReferences = changedObjects.stream().map(o -> historicView.queryXRefs(o))
+			Set<CrossReference> changedCrossReferences = changedObjects.stream().map(historicView::queryXRefs)
 					.flatMap(Collection::stream).map(CrossReference::create).collect(Collectors.toSet());
 			changedCrossReferences.forEach(ref -> ref.setCommit(commit));
 			commit.getCrossReferences().addAll(changedCrossReferences);
@@ -138,7 +138,7 @@ public class CDOHistoryManagerImpl implements Closeable, ICDOHistoryManager {
 				commit.getDeletedObjects().addAll(createIdList(deletedObjects));
 
 				// changed resources
-				Set<CDOObject> resourcesOfDeletedObjects = deletedObjects.stream().map(CDOObject::cdoDirectResource)
+				Set<CDOObject> resourcesOfDeletedObjects = deletedObjects.stream().map(CDOObject::cdoResource)
 						.collect(Collectors.toSet());
 				commit.getChangedResources().addAll(createIdList(resourcesOfDeletedObjects));
 
