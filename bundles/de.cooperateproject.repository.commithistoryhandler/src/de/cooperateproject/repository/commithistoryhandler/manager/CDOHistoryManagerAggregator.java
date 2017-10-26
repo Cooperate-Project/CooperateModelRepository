@@ -18,6 +18,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.lang3.tuple.Pair;
+import org.apache.log4j.Logger;
 import org.eclipse.net4j.util.StringUtil;
 import org.eclipse.net4j.util.io.IOUtil;
 import org.w3c.dom.Document;
@@ -29,6 +30,7 @@ public enum CDOHistoryManagerAggregator {
 
 	INSTANCE;
 
+	private static final Logger LOGGER = Logger.getLogger(CDOHistoryManagerAggregator.class);
 	private static final String WILDCARD_IP = "0.0.0.0";
 	private static final String DEFAULT_HOST = "127.0.0.1";
 	private static final int DEFAULT_PORT = 2036;
@@ -45,6 +47,7 @@ public enum CDOHistoryManagerAggregator {
 
 	public void start() throws IOException {
 		try {
+			LOGGER.info(String.format("Trying to connecto %s.", connectionString));
 			waitForReachability(URI.create(connectionString), CONNECTION_TIMEOUT_IN_SECONDS);			
 		} catch (TimeoutException e) {
 			throw new IOException(e);
@@ -114,21 +117,21 @@ public enum CDOHistoryManagerAggregator {
 		return String.format("tcp://%s:%d", host, port);
 	}
 
+	@SuppressWarnings("squid:S2095")
 	private static void waitForReachability(URI connectionURI, int timeoutInSeconds) throws TimeoutException {
-		Socket socket = new Socket();
-		try {
-			long startTime = System.currentTimeMillis();
-			while (System.currentTimeMillis() - startTime < (timeoutInSeconds * 1000)) {
-				try {
-					socket.connect(new InetSocketAddress(InetAddress.getByName(connectionURI.getHost()),
-							connectionURI.getPort()), 1000);
-					return;
-				} catch (IOException e) {
-					continue;
-				}
+		long startTime = System.currentTimeMillis();
+		while (System.currentTimeMillis() - startTime < (timeoutInSeconds * 1000)) {
+			Socket socket = new Socket();
+			try {
+				socket.connect(
+						new InetSocketAddress(InetAddress.getByName(connectionURI.getHost()), connectionURI.getPort()),
+						1000);
+				return;
+			} catch (IOException e) {
+				continue;
+			} finally {
+				IOUtil.closeSilent(socket);
 			}
-		} finally {
-			IOUtil.closeSilent(socket);
 		}
 		throw new TimeoutException();
 	}

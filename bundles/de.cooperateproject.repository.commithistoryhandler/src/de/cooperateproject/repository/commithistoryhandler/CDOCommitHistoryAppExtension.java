@@ -23,7 +23,7 @@ public class CDOCommitHistoryAppExtension implements IAppExtension {
 			try {
 				CDOHistoryManagerAggregator.INSTANCE.start();
 			} catch (IOException e) {
-				LOGGER.error("Starting of repository listeners failed.");
+				LOGGER.error("Starting of repository listeners failed.", e);
 			}
 		}).start();
 	}
