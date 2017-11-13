@@ -21,6 +21,7 @@
 		<initialPackage nsURI="http://www.cooperateproject.de/modeling/textual/commons"/>
 		<initialPackage nsURI="http://www.cooperateproject.de/modeling/textual/cls/Cls"/>
 		<initialPackage nsURI="http://www.cooperateproject.de/modeling/textual/usecase/Usecase"/>
+		<initialPackage nsURI="http://www.cooperateproject.de/modeling/textual/component/Component"/>
 		<initialPackage nsURI="http://www.eclipse.org/emf/2002/Ecore"/>
 		<initialPackage nsURI="http://www.eclipse.org/papyrus/infra/gmfdiag/style"/>
 
