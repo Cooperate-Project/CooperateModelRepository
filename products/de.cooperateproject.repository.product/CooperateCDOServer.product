@@ -51,6 +51,7 @@
       <feature id="org.eclipse.ocl"/>
       <feature id="org.eclipse.emf.databinding"/>
       <feature id="de.cooperateproject.modeling.textual.metamodels.feature"/>
+      <feature id="de.cooperateproject.papyrusmetamodels"/>
       <feature id="org.eclipse.gmf.runtime.notation"/>
       <feature id="org.eclipse.uml2.uml"/>
       <feature id="org.eclipse.uml2.common"/>
