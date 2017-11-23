@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Logging Configuration
 Bundle-SymbolicName: de.cooperateproject.repository.logging;singleton:=true
-Bundle-Version: 0.6.1.qualifier
+Bundle-Version: 0.7.0
 Bundle-Activator: de.cooperateproject.repository.logging.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.apache.log4j;bundle-version="1.2.15"
