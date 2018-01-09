@@ -15,8 +15,9 @@
 	
 	<modules>
 		<module>de.cooperateproject.repository.commithistoryhandler</module>
+		<module>de.cooperateproject.repository.focustransfer</module>
 		<module>de.cooperateproject.repository.logging</module>
-		<module>de.cooperateproject.repository.messagebroker</module>
+		<module>de.cooperateproject.repository.protocolutils</module>
 	</modules>
 	
 </project>
