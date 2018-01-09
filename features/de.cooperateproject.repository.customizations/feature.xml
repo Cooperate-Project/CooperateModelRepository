@@ -23,13 +23,6 @@
    </requires>
 
    <plugin
-         id="de.cooperateproject.repository.messagebroker"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="de.cooperateproject.repository.commithistoryhandler"
          download-size="0"
          install-size="0"
@@ -38,6 +31,20 @@
 
    <plugin
          id="de.cooperateproject.repository.logging"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.cooperateproject.repository.focustransfer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.cooperateproject.repository.protocolutils"
          download-size="0"
          install-size="0"
          version="0.0.0"

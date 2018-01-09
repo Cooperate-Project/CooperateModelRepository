@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.cdo.server.appExtensions">
+      <appExtension
+            class="de.cooperateproject.repository.focustransfer.FocusTransferAppExtension">
+      </appExtension>
+   </extension>
+   <extension
+         point="org.eclipse.net4j.util.factories">
+      <factory
+            class="de.cooperateproject.repository.focustransfer.protocol.FocusTransferProtocolFactory"
+            productGroup="org.eclipse.net4j.serverProtocols"
+            type="COOPERATE_FOCUS_TRANSFER">
+      </factory>
+   </extension>
+
+</plugin>

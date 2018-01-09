@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Focustransfer
+Bundle-SymbolicName: de.cooperateproject.repository.focustransfer;singleton:=true
+Bundle-Version: 0.7.1.qualifier
+Bundle-Activator: de.cooperateproject.repository.focustransfer.Activator
+Require-Bundle: de.cooperateproject.repository.logging,
+ de.cooperateproject.repository.protocolutils,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.cdo.server,
+ org.eclipse.emf.cdo.server,
+ org.eclipse.net4j;bundle-version="4.6.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.log4j

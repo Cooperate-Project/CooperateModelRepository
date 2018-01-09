@@ -11,6 +11,7 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.13.0",
  org.eclipse.emf.cdo.net4j,
  org.eclipse.emf.cdo.server,
  com.google.guava;bundle-version="15.0.0",
- de.cooperateproject.repository.logging
+ de.cooperateproject.repository.logging,
+ de.cooperateproject.repository.protocolutils
 Import-Package: org.apache.log4j
 Bundle-Activator: de.cooperateproject.repository.commithistoryhandler.Activator

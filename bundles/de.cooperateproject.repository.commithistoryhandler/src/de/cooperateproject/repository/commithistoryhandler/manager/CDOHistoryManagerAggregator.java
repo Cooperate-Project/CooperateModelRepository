@@ -23,6 +23,7 @@ import org.eclipse.net4j.util.StringUtil;
 import org.eclipse.net4j.util.io.IOUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -95,7 +96,7 @@ public enum CDOHistoryManagerAggregator {
 		int port = DEFAULT_PORT;
 		for (int i = 0; i < acceptors.getLength(); i++) {
 			Element acceptorConfig = (Element) acceptors.item(i);
-			if (!"tcp".equals(acceptorConfig.getAttribute("type"))) {
+			if (hasNegotiator(acceptorConfig) || !"tcp".equals(acceptorConfig.getAttribute("type"))) {
 				continue;
 			}
 			String listenAddr = acceptorConfig.getAttribute("listenAddr");
@@ -115,6 +116,16 @@ public enum CDOHistoryManagerAggregator {
 		}
 		
 		return String.format("tcp://%s:%d", host, port);
+	}
+
+	private static boolean hasNegotiator(Element acceptorConfig) {
+		for (int i = 0; i < acceptorConfig.getChildNodes().getLength(); i++) {
+			Node acceptorChild = acceptorConfig.getChildNodes().item(i);
+			if ("negotiator".equals(acceptorChild.getNodeName())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	@SuppressWarnings("squid:S2095")

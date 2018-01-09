@@ -219,25 +219,4 @@
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
-         id="org.fusesource.hawtbuf.hawtbuf"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="javax.jms"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.apache.geronimo.specs.geronimo-j2ee-management_1.1_spec"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 </feature>
