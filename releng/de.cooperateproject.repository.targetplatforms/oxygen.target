@@ -63,8 +63,8 @@
 <repository location="https://dl.bintray.com/cooperate-project/CooperateLicense/updatesite/1.0.0/"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="0.8.0"/>
-<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/0.8.0/"/>
+<unit id="de.cooperateproject.modeling.textual.metamodels.feature.feature.group" version="0.8.1.201803151613"/>
+<repository location="https://dl.bintray.com/cooperate-project/CooperateModelingEnvironment/updatesite/latest/"/>
 </location>
 <location includeAllPlatforms="true" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
 <unit id="de.cooperateproject.papyrusmetamodels.feature.group" version="1.0.0.201711071240"/>
