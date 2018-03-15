@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.cooperateproject.repository</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.8.0</version>
+	<version>0.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Cooperate Modeling Repository</name>
 
@@ -96,7 +96,7 @@
 						<artifact>
 							<groupId>de.cooperateproject.repository</groupId>
 							<artifactId>targetplatforms</artifactId>
-							<version>0.8.0</version>
+							<version>0.8.1-SNAPSHOT</version>
 							<classifier>oxygen</classifier>
 						</artifact>
 					</target>					

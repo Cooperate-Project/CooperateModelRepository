@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Focustransfer
 Bundle-SymbolicName: de.cooperateproject.repository.focustransfer;singleton:=true
-Bundle-Version: 0.8.0
+Bundle-Version: 0.8.1.qualifier
 Bundle-Activator: de.cooperateproject.repository.focustransfer.Activator
 Require-Bundle: de.cooperateproject.repository.logging,
  de.cooperateproject.repository.protocolutils,
