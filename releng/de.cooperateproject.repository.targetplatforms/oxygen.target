@@ -42,7 +42,7 @@
 <unit id="org.eclipse.emf.mapping.feature.group" version="2.9.0.v20170609-0928"/>
 <unit id="org.eclipse.emf.validation.feature.group" version="1.11.0.201706061352"/>
 <unit id="org.eclipse.gmf.runtime.notation.sdk.feature.group" version="1.11.0.201706061354"/>
-<unit id="org.eclipse.jdt.feature.group" version="3.13.1.v20171009-0410"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.13.3.v20180301-0715"/>
 <unit id="org.eclipse.net4j.db.feature.group" version="4.6.0.v20170521-0536"/>
 <unit id="org.eclipse.net4j.db.h2.feature.group" version="4.3.0.v20161018-1530"/>
 <unit id="org.eclipse.net4j.feature.group" version="4.6.0.v20170522-0642"/>
