@@ -6,8 +6,6 @@ before_install:
 - git clone --depth 1 https://github.com/Cooperate-Project/BuildUtils.git /tmp/BuildUtils
 - . /tmp/BuildUtils/travisci/setup.sh
 install: true
-before_script:
-- jjs -fv ./releng/de.cooperateproject.repository.targetplatforms/updateTarget.js -- ./releng/de.cooperateproject.repository.targetplatforms/oxygen.target $TRAVIS_BRANCH
 script:
 - mavenBuild.sh
 cache:

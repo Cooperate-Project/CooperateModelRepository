@@ -4,9 +4,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>de.cooperateproject</groupId>
-		<artifactId>de.cooperateproject.parent.eclipse</artifactId>
-		<version>1.0.2</version>
+		<groupId>de.cooperate-project</groupId>
+		<artifactId>de.cooperate-project.parent.eclipse</artifactId>
+		<version>1.1.0</version>
 	</parent>
 	<groupId>de.cooperateproject.repository</groupId>
 	<artifactId>parent</artifactId>
@@ -34,7 +34,54 @@
 		<bintray.deploy.package>bundledProducts</bintray.deploy.package>
 		<maven.deploy-plugin.version>2.8.2</maven.deploy-plugin.version>
 		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
+		
+		<org.palladiosimulator.maven.tychotprefresh.tplocation.0>${project.basedir}/releng/de.cooperateproject.repository.targetplatforms/oxygen.target</org.palladiosimulator.maven.tychotprefresh.tplocation.0>
+
+		<org.palladiosimulator.maven.tychotprefresh.tpproject.groupId>de.cooperateproject.repository</org.palladiosimulator.maven.tychotprefresh.tpproject.groupId>
+		<org.palladiosimulator.maven.tychotprefresh.tpproject.artifactId>target-platform-merged-temporary</org.palladiosimulator.maven.tychotprefresh.tpproject.artifactId>
+		<org.palladiosimulator.maven.tychotprefresh.tpproject.version>1.0.0</org.palladiosimulator.maven.tychotprefresh.tpproject.version>
+		<org.palladiosimulator.maven.tychotprefresh.tpproject.classifier>merged-temporary</org.palladiosimulator.maven.tychotprefresh.tpproject.classifier>
+		<org.palladiosimulator.maven.tychotprefresh.tpproject.type>target</org.palladiosimulator.maven.tychotprefresh.tpproject.type>
 	</properties>
+	
+	<profiles>
+		<profile>
+			<id>release-build</id>
+			<activation>
+				<property>
+					<name>env.TRAVIS_BRANCH</name>
+					<value>!master</value>
+				</property>
+			</activation>
+			<properties>
+				<org.palladiosimulator.maven.tychotprefresh.filter.0>release</org.palladiosimulator.maven.tychotprefresh.filter.0>
+			</properties>
+		</profile>
+		<profile>
+			<id>local-build</id>
+			<activation>
+				<property>
+					<name>env.TRAVIS</name>
+					<value>!true</value>
+				</property>
+			</activation>
+			<properties>
+				<org.palladiosimulator.maven.tychotprefresh.filter.0>nightly</org.palladiosimulator.maven.tychotprefresh.filter.0>
+			</properties>
+		</profile>
+		<profile>
+			<id>nightly-build</id>
+			<activation>
+				<property>
+					<name>env.TRAVIS_BRANCH</name>
+					<value>master</value>
+				</property>
+			</activation>
+			<properties>
+				<org.palladiosimulator.maven.tychotprefresh.filter.0>nightly</org.palladiosimulator.maven.tychotprefresh.filter.0>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -95,9 +142,9 @@
 					<target>
 						<artifact>
 							<groupId>de.cooperateproject.repository</groupId>
-							<artifactId>targetplatforms</artifactId>
-							<version>0.8.1-SNAPSHOT</version>
-							<classifier>oxygen</classifier>
+							<artifactId>target-platform-merged-temporary</artifactId>
+							<version>1.0.0</version>
+							<classifier>merged-temporary</classifier>
 						</artifact>
 					</target>					
 					<environments>
